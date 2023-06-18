@@ -23,7 +23,7 @@ If user tries increase battery quantity without adding transformer, the error wi
 ### `Step 2: review calculated results`
 User can review results for total cost, total energy and total land dimensions.
 
-### `Step 3: update device quantites`
+### `Step 3: review generated layout`
 User can review auto generated site layout
 
 
