@@ -63,7 +63,7 @@ const SiteLayout = ({ batteryQuantities }) => {
   };
 
   return (
-    <div>
+    <div style={{ width: `${maxSiteWidth * 10}px`, border: '1px solid #000', padding: '10px' }}>
     <Typography variant="h4" component="h4" gutterBottom>
       Site Layout
     </Typography>
