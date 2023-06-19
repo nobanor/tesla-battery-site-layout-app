@@ -41,7 +41,11 @@ const BatteryInput = ({ onBatteryQuantityChange }) => {
         setPowerpackQuantity(quantity);
         break;
       case 'transformer':
-        if (quantity < transformerQuantity) {
+        const requiredTransformers = Math.floor(
+          (megapack2XLQuantity + megapack2Quantity + megapackQuantity + powerpackQuantity) / 4
+        );
+  
+        if (quantity < requiredTransformers) {
           setShowTransformerAlert(true);
           return; // Prevent decreasing transformer quantity
         }
